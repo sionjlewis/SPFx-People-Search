@@ -1,0 +1,20 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+
+.resultUserPhoto {
+
+  padding: 0.75rem 0 0.5rem; // top, right & left, bottom
+  display: inline-block;
+  min-height: 76px;
+  text-align: center;
+  width: 100%;
+
+  .imageWrapper {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px;
+    text-align: center;
+    width: auto;
+  }
+
+}

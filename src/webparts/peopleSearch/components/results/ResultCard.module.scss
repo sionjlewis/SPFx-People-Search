@@ -1,0 +1,32 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+// Defined variables.
+$themePrimary: '[theme:neutralLight, default: #fefefe]';
+$themeSecondary: '[theme:themeSecondary, default: #2b88d8]';
+$themeWhite: '[theme:white, default:white]';
+
+.resultCard {
+
+  .resultCardColumn {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md4;
+    @include ms-lg3;
+    // Override the 'ms-Grid-col' padding.
+    padding-left: 0px;
+  }
+
+  .resultCardInner {
+    background-color: #ffffff;
+    //border: 1px solid $themePrimary;
+    border-bottom-right-radius: 3px;
+    border-width: 0 1px 1px 0;
+    // Note: Look at 'ms-depth-4' as an alternative to box-shadow.
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+}

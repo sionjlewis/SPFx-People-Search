@@ -1,0 +1,80 @@
+{
+  /**
+   * Install Chrome Debugger Extension for Visual Studio Code to debug your components with the
+   * Chrome browser: https://aka.ms/spfx-debugger-extensions
+   */
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Local Workbench",
+      "type": "chrome",
+      "request": "launch",
+      "url": "https://localhost:4321/temp/workbench.html",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///.././src/*": "${webRoot}/src/*",
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222"
+      ]
+    },
+    {
+      "name": "Tenant Workbench",
+      "type": "chrome",
+      "request": "launch",
+      "url": "https://tenant.sharepoint.com/_layouts/workbench.aspx",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///.././src/*": "${webRoot}/src/*",
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "-incognito"
+      ]
+    },
+    {
+      "name": "Tenant Test Page",
+      "type": "chrome",
+      "request": "launch",
+      "url": "https://tenant.sharepoint.com/SitePages/Test.aspx?debug=true&noredir=true&debugManifestsFile=https://localhost:4321/temp/manifests.js",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///.././src/*": "${webRoot}/src/*",
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "-incognito"
+      ]
+    },
+    {
+      "name": "Hosted workbench",
+      "type": "chrome",
+      "request": "launch",
+      "url": "https://enter-your-SharePoint-site/_layouts/workbench.aspx",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///.././src/*": "${webRoot}/src/*",
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "-incognito"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+// Defined variables.
+$themePrimary: '[theme:neutralLight, default: #fefefe]';
+$themeSecondary: '[theme:themeSecondary, default: #2b88d8]';
+$themeWhite: '[theme:white, default:white]';
+
+.footerWrapper {
+
+  .footerRow {
+    @include ms-Grid-row;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .footerColumnLeft {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md6;
+    @include ms-lg4;
+    padding-top: 3px;
+    padding-bottom: 5px;
+
+    span {
+      color: $themeSecondary;
+    }
+  }
+
+  .footerColumnRight {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md6;
+    @include ms-lg8;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    text-align: right;
+
+    span {
+      color: $themeSecondary;
+    }
+  }
+
+}

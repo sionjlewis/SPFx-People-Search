@@ -1,0 +1,43 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+// Defined variables.
+$themePrimary: '[theme:neutralLight, default: #fefefe]';
+$themeSecondary: '[theme:themeSecondary, default: #2b88d8]';
+$themeWhite: '[theme:white, default:white]';
+
+.resultWrapper {
+  @include ms-Grid;
+  // override the 'ms-Grid' padding.
+  padding-right: 0px;
+  padding-top: 8px;
+
+  .resultWrapperRow {
+    @include ms-Grid-row;
+  }
+
+  .resultLoadingRow, .resultNoDataRow {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md12;
+    @include ms-lg12;
+    // override the 'ms-Grid-col' padding.
+    padding-left: 0px;
+  }
+
+  .resultLoadingCol, .resultNoDataCol {
+    background-color: #ffffff;
+    border-bottom-right-radius: 3px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    height: 180px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    div {
+      padding-top: 13px;
+      padding-left: 8px;
+    }
+  }
+
+}

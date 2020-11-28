@@ -1,0 +1,89 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+// Defined variables.
+$themePrimary: '[theme:neutralLight, default: #fefefe]';
+$themeSecondary: '[theme:themeSecondary, default: #2b88d8]';
+$themeWhite: '[theme:white, default:white]';
+
+.resultUserContact {
+  clear: both;
+
+  .contactCardHeader {
+    clear: both;
+    @include ms-Grid-row;
+    min-height: 40px;
+  }
+
+  .contactHeaderName {
+    @include ms-Grid-col;
+    @include ms-sm10;
+    @include ms-md10;
+    @include ms-lg10;
+    color: $themeSecondary;
+    font-size: 15px;
+    font-weight: 500;
+    min-height: 40px;
+  }
+
+  .contactHeaderInfo {
+    @include ms-Grid-col;
+    @include ms-sm2;
+    @include ms-md2;
+    @include ms-lg2;
+    color: $themeSecondary;
+    min-height: 40px;
+    padding: 0px;
+    text-align: right;
+    
+    button {
+      height: 27px; // Override from 32px OotB;
+    }
+  }
+
+  .contactCardBody {
+    min-height: 210px;
+
+    .contactBodyInfo {
+      //background-color: #EFEFEF;
+      min-height: 210px;
+    }
+
+    .contactTitle {
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .contactText {
+      font-size: 13px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: inherit;
+    }
+
+    .contactTextSmaller {
+      font-size: 11px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: inherit;
+    }
+
+    .contactTextWrap {
+      text-overflow: ellipsis;
+      max-width: inherit;
+    }
+
+    .contactSpacer {
+      font-size: 6px;
+      padding: 0px;
+    }
+  }
+
+  .contactCardLinks {
+    color: $themeSecondary;
+    text-align: center;
+    padding: 0px 5px;
+  }
+
+}

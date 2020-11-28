@@ -1,0 +1,280 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,userPrincipalName,displayName,mail,jobTitle,mobilePhone,companyName,extension_7d1bd45a54af4c7c943ed5bff5a2a231_company)",
+  "@odata.count": 31,
+  "value": [{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(userPrincipalName,id,displayName,givenName,surname,jobTitle,mail,mobilePhone,businessPhones,department,officeLocation,country,userType)",
+    "value": [{
+        "userPrincipalName": "AdeleV@M365xDemo.onmicrosoft.com",
+        "id": "90232657-a50d-4070-8a09-bec6fc0d47bd",
+        "displayName": "Adele Vance",
+        "givenName": "Adele",
+        "surname": "Vance",
+        "jobTitle": "Retail Manager",
+        "mail": "AdeleV@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0109",
+        "businessPhones": [
+          "+1 425 555 0109"
+        ],
+        "department": "Retail",
+        "officeLocation": "18/2111",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "AlexW@M365xDemo.onmicrosoft.com",
+        "id": "8fe49635-4157-42c6-86c6-207530994b8e",
+        "displayName": "Alex Wilber",
+        "givenName": "Alex",
+        "surname": "Wilber",
+        "jobTitle": "Marketing Assistant",
+        "mail": "AlexW@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0110",
+        "businessPhones": [
+          "+1 858 555 0110"
+        ],
+        "department": "Marketing",
+        "officeLocation": "131/1104",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "DiegoS@M365xDemo.onmicrosoft.com",
+        "id": "9a63f3b6-4618-434e-8ccb-f2f2e9877b18",
+        "displayName": "Diego Siciliani",
+        "givenName": "Diego",
+        "surname": "Siciliani",
+        "jobTitle": "HR Manager",
+        "mail": "DiegoS@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0108",
+        "businessPhones": [
+          "+1 205 555 0108"
+        ],
+        "department": "HR",
+        "officeLocation": "14/1108",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "GradyA@M365xDemo.onmicrosoft.com",
+        "id": "abe9d6ac-d8ce-49b4-9aca-5e4c4150a62d",
+        "displayName": "Grady Archie",
+        "givenName": "Grady",
+        "surname": "Archie",
+        "jobTitle": "Designer",
+        "mail": "GradyA@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0104",
+        "businessPhones": [
+          "+1 309 555 0104"
+        ],
+        "department": "R&D",
+        "officeLocation": "19/2109",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "HenriettaM@M365xDemo.onmicrosoft.com",
+        "id": "c0e622eb-e18f-412b-a884-35c761bb3247",
+        "displayName": "Henrietta Mueller",
+        "givenName": "Henrietta",
+        "surname": "Mueller",
+        "jobTitle": "Developer",
+        "mail": "HenriettaM@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0118",
+        "businessPhones": [
+          "+1 954 555 0118"
+        ],
+        "department": "R&D",
+        "officeLocation": "18/1106",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "IsaiahL@M365xDemo.onmicrosoft.com",
+        "id": "9afd1832-27ed-493c-9cce-b40568b97086",
+        "displayName": "Isaiah Langer",
+        "givenName": "Isaiah",
+        "surname": "Langer",
+        "jobTitle": "Sales Rep",
+        "mail": "IsaiahL@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0101",
+        "businessPhones": [
+          "+1 918 555 0101"
+        ],
+        "department": "Sales",
+        "officeLocation": "20/1101",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "JohannaL@M365xDemo.onmicrosoft.com",
+        "id": "91ba0396-b970-4cca-a6ca-dfc57305b26f",
+        "displayName": "Johanna Lorenz",
+        "givenName": "Johanna",
+        "surname": "Lorenz",
+        "jobTitle": "Senior Engineer",
+        "mail": "JohannaL@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0102",
+        "businessPhones": [
+          "+1 502 555 0102"
+        ],
+        "department": "Engineering",
+        "officeLocation": "23/2102",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "JoniS@M365xDemo.onmicrosoft.com",
+        "id": "19f0b50e-11a2-4241-a649-2197eaa7e386",
+        "displayName": "Joni Sherman",
+        "givenName": "Joni",
+        "surname": "Sherman",
+        "jobTitle": "Paralegal",
+        "mail": "JoniS@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0101",
+        "businessPhones": [
+          "+1 980 555 0101"
+        ],
+        "department": "Legal",
+        "officeLocation": "20/1109",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "LeeG@M365xDemo.onmicrosoft.com",
+        "id": "c5b5ab17-d571-4e3c-8383-29eae72d219d",
+        "displayName": "Lee Gu",
+        "givenName": "Lee",
+        "surname": "Gu",
+        "jobTitle": "Director",
+        "mail": "LeeG@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0101",
+        "businessPhones": [
+          "+1 913 555 0101"
+        ],
+        "department": "Manufacturing",
+        "officeLocation": "23/3101",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "LidiaH@M365xDemo.onmicrosoft.com",
+        "id": "d0b9969d-519f-41ca-a696-9838b397fb81",
+        "displayName": "Lidia Holloway",
+        "givenName": "Lidia",
+        "surname": "Holloway",
+        "jobTitle": "Product Manager",
+        "mail": "LidiaH@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0107",
+        "businessPhones": [
+          "+1 918 555 0107"
+        ],
+        "department": "Engineering",
+        "officeLocation": "20/2107",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "LynneR@M365xDemo.onmicrosoft.com",
+        "id": "01749be7-3209-4c3b-b827-8ef8bb9665e1",
+        "displayName": "Lynne Robbins",
+        "givenName": "Lynne",
+        "surname": "Robbins",
+        "jobTitle": "Planner",
+        "mail": "LynneR@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0104",
+        "businessPhones": [
+          "+1 918 555 0104"
+        ],
+        "department": "Retail",
+        "officeLocation": "20/1104",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "MeganB@M365xDemo.onmicrosoft.com",
+        "id": "b07735ec-6c4a-4d72-98b6-e1d128ac283f",
+        "displayName": "Megan Bowen",
+        "givenName": "Megan",
+        "surname": "Bowen",
+        "jobTitle": "Marketing Manager",
+        "mail": "MeganB@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0109",
+        "businessPhones": [
+          "+1 412 555 0109"
+        ],
+        "department": "Marketing",
+        "officeLocation": "12/1110",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "MiriamG@M365xDemo.onmicrosoft.com",
+        "id": "58166cdb-d732-4f82-b931-aa03c3972ebc",
+        "displayName": "Miriam Graham",
+        "givenName": "Miriam",
+        "surname": "Graham",
+        "jobTitle": "Director",
+        "mail": "MiriamG@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0109",
+        "businessPhones": [
+          "+1 858 555 0109"
+        ],
+        "department": "Sales & Marketing",
+        "officeLocation": "131/2103",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "NestorW@M365xDemo.onmicrosoft.com",
+        "id": "2007816a-fc76-41e7-877d-3856b4b81c93",
+        "displayName": "Nestor Wilke",
+        "givenName": "Nestor",
+        "surname": "Wilke",
+        "jobTitle": "Director",
+        "mail": "NestorW@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0105",
+        "businessPhones": [
+          "+1 206 555 0105"
+        ],
+        "department": "Operations",
+        "officeLocation": "36/2121",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "PattiF@M365xDemo.onmicrosoft.com",
+        "id": "efef897c-e9a9-4110-bb54-d013d5503152",
+        "displayName": "Patti Fernandez",
+        "givenName": "Patti",
+        "surname": "Fernandez",
+        "jobTitle": "President",
+        "mail": "PattiF@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+1 123 1234 0144",
+        "businessPhones": [
+          "+1 502 555 0144"
+        ],
+        "department": "Executive Management",
+        "officeLocation": "15/1102",
+        "country": "United States",
+        "userType": "Member"
+      },
+      {
+        "userPrincipalName": "PradeepG@M365xDemo.onmicrosoft.com",
+        "id": "1098e453-85d4-4fea-9afb-535858a3cef0",
+        "displayName": "Pradeep Gupta",
+        "givenName": "Pradeep",
+        "surname": "Gupta",
+        "jobTitle": "Accountant",
+        "mail": "PradeepG@M365xDemo.onmicrosoft.com",
+        "mobilePhone": "+20 12 123 1070",
+        "businessPhones": [
+          "+20 25 550 1070"
+        ],
+        "department": "Finance",
+        "officeLocation": "98/2202",
+        "country": "Egypt",
+        "userType": "Member"
+      }
+    ]
+  }]
+}

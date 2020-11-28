@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"sjlewis"
+			"preconfigured",
+			"Webpart",
+			"webpart",
+			"Webpart's",
+			"webpart's",
+			"Webparts",
+			"webparts",
+			"uifabric",
+			"fluentui",
+			"Srvc",
+			"unmount",
+			"organisation",
+			"nobrowser",
+			"sppkg",
+			"startswith",
+			"skiptoken",
+			"odata"
+		]
+	}
+}

@@ -1,0 +1,26 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.searchWrapper {
+  @include ms-Grid;
+
+  .row {
+    @include ms-Grid-row;
+  }
+
+  .columnSearchBox {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md8;
+    @include ms-lg9;
+    padding-top: 3px;
+    padding-bottom: 5px;
+  }
+  .columnSearchClear {
+    @include ms-Grid-col;
+    @include ms-sm12;
+    @include ms-md4;
+    @include ms-lg3;
+    padding-top: 3px;
+    padding-bottom: 5px;
+  }
+}
