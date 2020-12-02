@@ -11,6 +11,7 @@ This project has been created as an exploration of React Hooks and accompanies a
 - [SharePoint/SPFx: Returning to Webpart Development Part #2](https://www.sjlewis.com/2020/09/09/sharepoint-spfx-returning-to-webpart-development-part-2/)
 
 - [SharePoint/SPFx: Returning to Webpart Development Part #3 \(with React Hooks\)](https://www.sjlewis.com/2020/09/27/sharepoint-spfx-returning-to-webpart-development-part-3-with-react-hooks/)
+- [SharePoint/SPFx: Returning to Webpart Development Part #4 (with React Hooks)](https://www.sjlewis.com/2020/12/02/sharepoint-spfx-returning-to-webpart-development-part-4-with-react-hooks/)
 
 ![WebPartScreenShot](./assets/SPFxPeoplePicker.png)
 
