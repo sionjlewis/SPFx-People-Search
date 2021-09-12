@@ -43,7 +43,7 @@ export const ResultWrapper: React.FunctionComponent<IResultWrapperProps> = (prop
         }
 
         getFilteredUsersExpanded(props.searchQuery);
-    }, [props.searchQuery]);
+    }, [props.searchQuery, data]);
 
 
     if (data !== null && loading === false && rowCount > 0) {

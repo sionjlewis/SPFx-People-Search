@@ -19,45 +19,53 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
   useEffect(() => {
     let userId: string = props.userId;
 
-    props.msGraphSrvcInstance.getUserPresence(userId).then((response: JSON) => {
-      if (response !== undefined && response !== null) {
-        let jsonData: any = response;
+    async function getUserPresence(userId: string) {
+      props.msGraphSrvcInstance.getUserPresence(userId).then((response: JSON) => {
+        if (response !== undefined && response !== null) {
+          let jsonData: any = response;
 
-        // https://docs.microsoft.com/en-us/javascript/api/react-internal/personapresence?view=office-ui-fabric-react-latest
-        if (jsonData.availability === 'Away') {
-          setUserPresence(PersonaPresence.away);
-        } else if (jsonData.availability === 'Blocked') {
-          setUserPresence(PersonaPresence.blocked);
-        } else if (jsonData.availability === 'Busy') {
-          setUserPresence(PersonaPresence.busy);
-        } else if (jsonData.availability === 'DoNotDisturb') {
-          setUserPresence(PersonaPresence.dnd);
-        } else if (jsonData.availability === 'None') {
-          setUserPresence(PersonaPresence.none);
-        } else if (jsonData.availability === 'Offline') {
-          setUserPresence(PersonaPresence.offline);
-        } else if (jsonData.availability === 'Available') {
-          setUserPresence(PersonaPresence.online);
+          // https://docs.microsoft.com/en-us/javascript/api/react-internal/personapresence?view=office-ui-fabric-react-latest
+          if (jsonData.availability === 'Away') {
+            setUserPresence(PersonaPresence.away);
+          } else if (jsonData.availability === 'Blocked') {
+            setUserPresence(PersonaPresence.blocked);
+          } else if (jsonData.availability === 'Busy') {
+            setUserPresence(PersonaPresence.busy);
+          } else if (jsonData.availability === 'DoNotDisturb') {
+            setUserPresence(PersonaPresence.dnd);
+          } else if (jsonData.availability === 'None') {
+            setUserPresence(PersonaPresence.none);
+          } else if (jsonData.availability === 'Offline') {
+            setUserPresence(PersonaPresence.offline);
+          } else if (jsonData.availability === 'Available') {
+            setUserPresence(PersonaPresence.online);
+          }
         }
-      }
-    }).catch((error: any) => {
-      // handle the response.
-      let err = error;
-    });
-  }, []);
+      }).catch((error: any) => {
+        // handle the response.
+        let err = error;
+      });
+    }
+
+    getUserPresence(userId);
+  }, [props.userId, userPresence]);
 
   useEffect(() => {
     let userId: string = props.userId;
 
-    props.msGraphSrvcInstance.getUserPhoto(userId, '96x96').then(async (response: any) => {
-      if (response !== undefined && response !== null) {
-        setUserPhotoURL(response);
-      }
-    }).catch((error: any) => {
-      // handle the response.
-      let err = error;
-    });
-  }, []);
+    async function getUserPhoto(userId: string) {
+      props.msGraphSrvcInstance.getUserPhoto(userId, '96x96').then(async (response: any) => {
+        if (response !== undefined && response !== null) {
+          setUserPhotoURL(response);
+        }
+      }).catch((error: any) => {
+        // handle the response.
+        let err = error;
+      });
+    }
+
+    getUserPhoto(userId);
+  }, [props.userId, userPhotoURL]);
 
   return (
     <div id={`result-card-${props.userId}`} className={styles.resultCard}>
